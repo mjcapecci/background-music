@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Provider } from 'react-redux';
 import store from '../store.js';
 import firebaseConfig from '../lib/firebaseConfig';
@@ -12,8 +11,6 @@ if (!firebase.apps.length) {
 }
 
 export default function App({ Component, pageProps }) {
-  useEffect(() => {}, []);
-
   return (
     <Provider store={store}>
       <Component {...pageProps} />
