@@ -1,0 +1,12 @@
+.container-center {
+  @include f-center;
+  min-height: 5rem;
+  min-width: 5rem;
+  border: 1px solid black;
+}
+
+.container-tri-grid {
+  @include g-tri-grid;
+  margin: 0 1rem;
+  grid-gap: 0.5rem;
+}
